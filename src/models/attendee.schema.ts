@@ -1,19 +1,19 @@
-import { BaseUser, BaseUserModel } from "./base_user.schema";
+import { base_user, base_user_model } from "./base_user.schema";
 import { Model, Schema } from "mongoose";
 
-interface Attendee extends BaseUser {
+interface attendee extends base_user {
     name: string;
     lastname: string;
     age: number;
     location: string;
 }
 
-const AttendeeSchema = new Schema<Attendee>({
+const attendee_schema = new Schema<attendee>({
     name: { type: String, required: true },
     lastname: { type: String, required: true },
     age: { type: Number, required: true },
     location: { type: String, required: true }
 });
 
-export const AttendeeModel: Model<Attendee> = BaseUserModel.discriminator("Attendee",AttendeeSchema);
+export const attendee_model: Model<attendee> = base_user_model.discriminator("Attendee",attendee_schema);
 

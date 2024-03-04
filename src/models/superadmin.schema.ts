@@ -1,13 +1,13 @@
-import { BaseUser, BaseUserModel } from "./base_user.schema";
+import { base_user, base_user_model } from "./base_user.schema";
 import { Model, Schema } from "mongoose";
 
-interface SuperAdmin extends BaseUser {
-    keyaccess: string;
+interface super_admin extends base_user {
+    key_access: string;
 }
 
-const SuperAdminSchema = new Schema<SuperAdmin>({
-    keyaccess: { type: String, required: true, unique: true }
+const super_admin_schema = new Schema<super_admin>({
+    key_access: { type: String, required: true, unique: true }
 });
 
-export const SuperAdminModel: Model<SuperAdmin> = BaseUserModel.discriminator("SuperAdmin",SuperAdminSchema);
+export const super_admin_model: Model<super_admin> = base_user_model.discriminator("SuperAdmin",super_admin_schema);
 
