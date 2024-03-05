@@ -34,7 +34,7 @@
 			},
 			"response": [
 				{
-					"name": "response",
+					"name": "responsesuccesful",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -94,6 +94,130 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"email\": \"user@gmail.com\",\n    \"password\": \"$2a$10$LlRa60ODsteRaxRiPingsuLwvA25TS8fLDbNjrPQAZ30sRu9WT6tK\",\n    \"_id\": \"65e67ac6a74dfc079265cc1f\",\n    \"__t\": \"SuperAdmin\",\n    \"key_access\": \"f67if3S46P\",\n    \"createdAt\": \"2024-03-05T01:52:06.549Z\",\n    \"updatedAt\": \"2024-03-05T01:52:06.549Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "responseuserexists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_super_admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_super_admin"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29-I+uY67qI2cw92c4cvqzieAkogKs\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Mar 2024 12:59:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Super Admin already exists!\"\n}"
+				},
+				{
+					"name": "validationerror",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"123\",\r\n    \"key_access\":\"f67if3S4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_super_admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_super_admin"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "529"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"211-aPS+P0ycSM6RPW16FDvPQUFu17A\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Mar 2024 13:00:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 6,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Password must be at least 6 characters\\\",\\n    \\\"path\\\": [\\n      \\\"password\\\"\\n    ]\\n  },\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 10,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Key access must be at least 10 characters\\\",\\n    \\\"path\\\": [\\n      \\\"key_access\\\"\\n    ]\\n  }\\n]\"\n}"
 				}
 			]
 		}
