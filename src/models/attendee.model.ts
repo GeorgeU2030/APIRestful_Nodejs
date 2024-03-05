@@ -1,4 +1,4 @@
-import { base_user, base_user_model } from "./base_user.schema";
+import { base_user, base_user_model } from "./base_user.model";
 import { Model, Schema } from "mongoose";
 
 export interface attendee extends base_user {

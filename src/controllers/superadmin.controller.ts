@@ -1,4 +1,4 @@
-import { super_admin_model, super_admin } from "../models/superadmin.schema";
+import { super_admin_model, super_admin } from "../models/superadmin.model";
 import { Request, Response } from "express";
 import BaseUserService from "../services/base_user.service";
 import SuperAdminService from "../services/superadmin.service";

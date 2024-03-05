@@ -1,4 +1,4 @@
-import { super_admin_model, super_admin } from "../models/superadmin.schema";
+import { super_admin_model, super_admin } from "../models/superadmin.model";
 
 
 class SuperAdminService {
