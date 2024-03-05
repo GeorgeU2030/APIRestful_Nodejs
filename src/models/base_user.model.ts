@@ -14,4 +14,4 @@ const base_user_schema = new Schema<base_user>({
     { timestamps: true }
 );
 
-export const base_user_model: Model<base_user> = mongoose.model("BaseUser", base_user_schema);
+export const base_user_model: Model<base_user> = mongoose.model("User", base_user_schema);

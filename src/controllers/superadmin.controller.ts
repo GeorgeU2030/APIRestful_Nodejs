@@ -16,6 +16,7 @@ class SuperAdminController {
                 res.status(400).json({message:'Super Admin already exists!'})
             }else{
                 req.body.password = bcryptjs.hashSync(req.body.password, 10);
+                req.body.key_access = bcryptjs.hashSync(req.body.key_access, 15);
                 const super_admin = req.body;
                 const new_super_admin = await SuperAdminService.create_super_admin_service(super_admin);
                 res.status(201).json(new_super_admin);

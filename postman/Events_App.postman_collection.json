@@ -34,7 +34,7 @@
 			},
 			"response": [
 				{
-					"name": "responsesuccesful",
+					"name": "response_succesful",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -73,15 +73,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "264"
+							"value": "314"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"108-E7jQnvHXmKddtG+/2Ou+N2mMvpw\""
+							"value": "W/\"13a-ptbl+GoguZtBN3/oc9g0i9Svd20\""
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 05 Mar 2024 01:52:06 GMT"
+							"value": "Tue, 05 Mar 2024 13:34:50 GMT"
 						},
 						{
 							"key": "Connection",
@@ -93,10 +93,10 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"email\": \"user@gmail.com\",\n    \"password\": \"$2a$10$LlRa60ODsteRaxRiPingsuLwvA25TS8fLDbNjrPQAZ30sRu9WT6tK\",\n    \"_id\": \"65e67ac6a74dfc079265cc1f\",\n    \"__t\": \"SuperAdmin\",\n    \"key_access\": \"f67if3S46P\",\n    \"createdAt\": \"2024-03-05T01:52:06.549Z\",\n    \"updatedAt\": \"2024-03-05T01:52:06.549Z\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"email\": \"user@gmail.com\",\n    \"password\": \"$2a$10$rEatOxLpHkfY499E9deGY.OvGFR8mJcURkF7qY0pUGpXOzuGEHPia\",\n    \"_id\": \"65e71f7ad76a9bb548f9df1c\",\n    \"__t\": \"SuperAdmin\",\n    \"key_access\": \"$2a$15$ib4ReINKZmnZBW4ec/LKIOq7qsx6c7alYp/7T8lZS0nkrh4WoOOAa\",\n    \"createdAt\": \"2024-03-05T13:34:50.230Z\",\n    \"updatedAt\": \"2024-03-05T13:34:50.230Z\",\n    \"__v\": 0\n}"
 				},
 				{
-					"name": "responseuserexists",
+					"name": "superadmin_exists",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -143,7 +143,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 05 Mar 2024 12:59:44 GMT"
+							"value": "Tue, 05 Mar 2024 13:35:15 GMT"
 						},
 						{
 							"key": "Connection",
@@ -158,13 +158,13 @@
 					"body": "{\n    \"message\": \"Super Admin already exists!\"\n}"
 				},
 				{
-					"name": "validationerror",
+					"name": "validation_error",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"123\",\r\n    \"key_access\":\"f67if3S4\"\r\n}",
+							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"key_access\":\"f67i6P\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -197,15 +197,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "529"
+							"value": "285"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"211-aPS+P0ycSM6RPW16FDvPQUFu17A\""
+							"value": "W/\"11d-ltUrku1KL7LUfW8sKn/KZX5TIpI\""
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 05 Mar 2024 13:00:31 GMT"
+							"value": "Tue, 05 Mar 2024 13:35:47 GMT"
 						},
 						{
 							"key": "Connection",
@@ -217,7 +217,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 6,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Password must be at least 6 characters\\\",\\n    \\\"path\\\": [\\n      \\\"password\\\"\\n    ]\\n  },\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 10,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Key access must be at least 10 characters\\\",\\n    \\\"path\\\": [\\n      \\\"key_access\\\"\\n    ]\\n  }\\n]\"\n}"
+					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 10,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Key access must be at least 10 characters\\\",\\n    \\\"path\\\": [\\n      \\\"key_access\\\"\\n    ]\\n  }\\n]\"\n}"
 				}
 			]
 		}
