@@ -1,7 +1,7 @@
 import { base_user, base_user_model } from "./base_user.schema";
 import { Model, Schema } from "mongoose";
 
-interface super_admin extends base_user {
+export interface super_admin extends base_user {
     key_access: string;
 }
 

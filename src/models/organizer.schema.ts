@@ -1,7 +1,7 @@
 import {base_user, base_user_model} from "./base_user.schema";
 import {Model, Schema} from "mongoose";
 
-interface organizer extends base_user {
+export interface organizer extends base_user {
     organization: string;
     name: string;
     lastname: string;

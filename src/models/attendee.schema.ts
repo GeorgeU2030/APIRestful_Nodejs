@@ -1,7 +1,7 @@
 import { base_user, base_user_model } from "./base_user.schema";
 import { Model, Schema } from "mongoose";
 
-interface attendee extends base_user {
+export interface attendee extends base_user {
     name: string;
     lastname: string;
     age: number;
