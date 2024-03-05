@@ -8,7 +8,7 @@ import bcryptjs from "bcryptjs";
 class SuperAdminController {
     private base_user_service = new BaseUserService<super_admin>(super_admin_model);
 
-    public create_super_admin= async(req:Request, res:Response)=>{
+    public create_super_admin = async(req:Request, res:Response) => {
         try{
             const email = req.body.email;
             const exist_super_admin = await this.base_user_service.findUserByEmail(email);
