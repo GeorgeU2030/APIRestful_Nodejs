@@ -311,6 +311,177 @@
 					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsImlhdCI6MTcwOTcyNzc5NywiZXhwIjoxNzA5NzI4Mzk3fQ.gmbogDU-6YFndHzinKMWUzb0AEnaBlIh-AoPbGNlDqc\"\n}"
 				}
 			]
+		},
+		{
+			"name": "create_organizer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJTdXBlckFkbWluIiwiaWF0IjoxNzA5NzMxMzUzLCJleHAiOjE3MDk3MzE5NTN9.XRd_JlFtr_swuNAwEO3J-5x7-63kmQpUYkSXgkK-aOM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"organizer\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"organizador 1\",\r\n    \"lastname\":\"apellido 1\",\r\n    \"rank\":\"coordinador\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create_organizer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create_organizer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "validation_error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJTdXBlckFkbWluIiwiaWF0IjoxNzA5NzMxMzUzLCJleHAiOjE3MDk3MzE5NTN9.XRd_JlFtr_swuNAwEO3J-5x7-63kmQpUYkSXgkK-aOM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"organizer\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"organizador 1\",\r\n    \"lastname\":\"apellido 1\",\r\n    \"rank\":\"coordinador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_organizer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_organizer"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "198"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c6-cNy+y2r4ndk9k7kVMZ5sma5E/3U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 13:24:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"validation\\\": \\\"email\\\",\\n    \\\"code\\\": \\\"invalid_string\\\",\\n    \\\"message\\\": \\\"Invalid email adress\\\",\\n    \\\"path\\\": [\\n      \\\"email\\\"\\n    ]\\n  }\\n]\"\n}"
+				},
+				{
+					"name": "organizer_succesfull",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJTdXBlckFkbWluIiwiaWF0IjoxNzA5NzMxMzUzLCJleHAiOjE3MDk3MzE5NTN9.XRd_JlFtr_swuNAwEO3J-5x7-63kmQpUYkSXgkK-aOM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"organizador 1\",\r\n    \"lastname\":\"apellido 1\",\r\n    \"rank\":\"coordinador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_organizer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_organizer"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "333"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14d-wC8nLu4uzBqmBK8BlMZzdBaSwog\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 13:25:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"organizer@gmail.com\",\n    \"password\": \"$2a$10$Qr3p0JwUZPPtVwpLWIfOfepYtQOoGholbhBg30IRu8l8.AgBlCVgu\",\n    \"_id\": \"65e86ed3f3a01691d537cbf9\",\n    \"__t\": \"Organizer\",\n    \"organization\": \"Icesi\",\n    \"name\": \"organizador 1\",\n    \"lastname\": \"apellido 1\",\n    \"rank\": \"coordinador\",\n    \"createdAt\": \"2024-03-06T13:25:39.007Z\",\n    \"updatedAt\": \"2024-03-06T13:25:39.007Z\",\n    \"__v\": 0\n}"
+				}
+			]
 		}
 	]
 }

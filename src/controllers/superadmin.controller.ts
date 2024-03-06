@@ -49,6 +49,23 @@ class SuperAdminController {
         }
     }    
 
+    public create_organizer = async(req:Request, res:Response) => {
+        try{
+            const email = req.body.email;
+            const exist_organizer = await BaseUserService.find_user_by_email(email);
+            if(exist_organizer){
+                res.status(400).json({message:'Organizer already exists!'})
+            }else{
+                req.body.password = bcryptjs.hashSync(req.body.password, 10);
+                const organizer = req.body;
+                const new_organizer = await SuperAdminService.create_organizer_service(organizer);
+                res.status(201).json(new_organizer);
+            }
+            
+        }catch(error){
+            res.status(400).json({message:'An error ocurred! :('+error})
+        }
+    }
 }
 
 export default new SuperAdminController();

@@ -3,6 +3,7 @@ import mongoose,{ Document, Schema, Model } from "mongoose";
 export interface base_user extends Document {
     email: string;
     password: string;
+    __t:string
     createdAt: Date;
     updatedAt: Date;
 }
