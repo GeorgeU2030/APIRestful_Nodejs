@@ -5,5 +5,6 @@ import { superadmin_schema } from "../schemas/superadmin.schema";
 
 export const superadmin_routes = (app: Express) => {
     app.post("/create_super_admin",schema_validation(superadmin_schema),SuperAdminController.create_super_admin)
+    app.post("/login_super_admin",SuperAdminController.login_super_admin)
 }
 

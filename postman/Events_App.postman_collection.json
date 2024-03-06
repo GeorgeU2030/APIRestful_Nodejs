@@ -220,6 +220,97 @@
 					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 10,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Key access must be at least 10 characters\\\",\\n    \\\"path\\\": [\\n      \\\"key_access\\\"\\n    ]\\n  }\\n]\"\n}"
 				}
 			]
+		},
+		{
+			"name": "login_super_admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login_super_admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login_super_admin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login_succesful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login_super_admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login_super_admin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df-XgHKb0m8RUf8X7KINYEUukqJOAs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 12:23:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsImlhdCI6MTcwOTcyNzc5NywiZXhwIjoxNzA5NzI4Mzk3fQ.gmbogDU-6YFndHzinKMWUzb0AEnaBlIh-AoPbGNlDqc\"\n}"
+				}
+			]
 		}
 	]
 }

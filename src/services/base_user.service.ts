@@ -1,19 +1,26 @@
-import {Document, Model} from "mongoose";
-
-class BaseUserService<T extends Document>  {
-    private user_model: Model<T>;
-
-    constructor(user_model: Model<T>) {
-        this.user_model = user_model;
-    }
-
-    public async findUserByEmail(email: string): Promise<T | null> {
+import jwt from "jsonwebtoken";
+import { super_admin } from "../models/superadmin.model";
+import { organizer } from "../models/organizer.model";
+import { attendee } from "../models/attendee.model";
+import { base_user_model, base_user } from "../models/base_user.model";
+class BaseUserService  {
+   
+    public async find_user_by_email(email: string): Promise<base_user | null> {
         try {
-            return await this.user_model.findOne({email});
+            const user = await  base_user_model.findOne({email});
+            return user;
         }catch(error){
             throw new Error(`A problem ocurred :( ${error}`);
         }
     }
+
+    public generateToken (user: base_user):string {
+        try{
+            return jwt.sign({user_id:user.id,email:user.email}, process.env.TOKEN_SECRET as string, {expiresIn: '10m'});
+        }catch(error){
+            throw new Error((error as Error).message);
+        }
+    }
 }
 
-export default BaseUserService;
+export default new BaseUserService();
