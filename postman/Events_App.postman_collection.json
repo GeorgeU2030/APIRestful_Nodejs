@@ -7,325 +7,13 @@
 	},
 	"item": [
 		{
-			"name": "create_super_admin",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/create_super_admin",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"create_super_admin"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "response_succesful",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/create_super_admin",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"create_super_admin"
-							]
-						}
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "314"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"13a-ptbl+GoguZtBN3/oc9g0i9Svd20\""
-						},
-						{
-							"key": "Date",
-							"value": "Tue, 05 Mar 2024 13:34:50 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"email\": \"user@gmail.com\",\n    \"password\": \"$2a$10$rEatOxLpHkfY499E9deGY.OvGFR8mJcURkF7qY0pUGpXOzuGEHPia\",\n    \"_id\": \"65e71f7ad76a9bb548f9df1c\",\n    \"__t\": \"SuperAdmin\",\n    \"key_access\": \"$2a$15$ib4ReINKZmnZBW4ec/LKIOq7qsx6c7alYp/7T8lZS0nkrh4WoOOAa\",\n    \"createdAt\": \"2024-03-05T13:34:50.230Z\",\n    \"updatedAt\": \"2024-03-05T13:34:50.230Z\",\n    \"__v\": 0\n}"
-				},
-				{
-					"name": "superadmin_exists",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/create_super_admin",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"create_super_admin"
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "41"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"29-I+uY67qI2cw92c4cvqzieAkogKs\""
-						},
-						{
-							"key": "Date",
-							"value": "Tue, 05 Mar 2024 13:35:15 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"Super Admin already exists!\"\n}"
-				},
-				{
-					"name": "validation_error",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"key_access\":\"f67i6P\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/create_super_admin",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"create_super_admin"
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "285"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"11d-ltUrku1KL7LUfW8sKn/KZX5TIpI\""
-						},
-						{
-							"key": "Date",
-							"value": "Tue, 05 Mar 2024 13:35:47 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"too_small\\\",\\n    \\\"minimum\\\": 10,\\n    \\\"type\\\": \\\"string\\\",\\n    \\\"inclusive\\\": true,\\n    \\\"exact\\\": false,\\n    \\\"message\\\": \\\"Key access must be at least 10 characters\\\",\\n    \\\"path\\\": [\\n      \\\"key_access\\\"\\n    ]\\n  }\\n]\"\n}"
-				}
-			]
-		},
-		{
-			"name": "login_super_admin",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/login_super_admin",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"login_super_admin"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "login_succesful",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"key_access\":\"f67if3S46P\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/login_super_admin",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"login_super_admin"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "223"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"df-XgHKb0m8RUf8X7KINYEUukqJOAs\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 06 Mar 2024 12:23:17 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsImlhdCI6MTcwOTcyNzc5NywiZXhwIjoxNzA5NzI4Mzk3fQ.gmbogDU-6YFndHzinKMWUzb0AEnaBlIh-AoPbGNlDqc\"\n}"
-				}
-			]
-		},
-		{
 			"name": "create_organizer",
 			"request": {
 				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJTdXBlckFkbWluIiwiaWF0IjoxNzA5NzMxMzUzLCJleHAiOjE3MDk3MzE5NTN9.XRd_JlFtr_swuNAwEO3J-5x7-63kmQpUYkSXgkK-aOM",
-						"type": "text"
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"organizer\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"organizador 1\",\r\n    \"lastname\":\"apellido 1\",\r\n    \"rank\":\"coordinador\"\r\n}",
+					"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"Zacarias\",\r\n    \"lastname\":\"Candela\",\r\n    \"rank\":\"coordinator\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -346,87 +34,13 @@
 			},
 			"response": [
 				{
-					"name": "validation_error",
+					"name": "user_successfull",
 					"originalRequest": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJTdXBlckFkbWluIiwiaWF0IjoxNzA5NzMxMzUzLCJleHAiOjE3MDk3MzE5NTN9.XRd_JlFtr_swuNAwEO3J-5x7-63kmQpUYkSXgkK-aOM",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"organizer\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"organizador 1\",\r\n    \"lastname\":\"apellido 1\",\r\n    \"rank\":\"coordinador\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/create_organizer",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"create_organizer"
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "198"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"c6-cNy+y2r4ndk9k7kVMZ5sma5E/3U\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 06 Mar 2024 13:24:37 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"validation\\\": \\\"email\\\",\\n    \\\"code\\\": \\\"invalid_string\\\",\\n    \\\"message\\\": \\\"Invalid email adress\\\",\\n    \\\"path\\\": [\\n      \\\"email\\\"\\n    ]\\n  }\\n]\"\n}"
-				},
-				{
-					"name": "organizer_succesfull",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlNzFmN2FkNzZhOWJiNTQ4ZjlkZjFjIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJTdXBlckFkbWluIiwiaWF0IjoxNzA5NzMxMzUzLCJleHAiOjE3MDk3MzE5NTN9.XRd_JlFtr_swuNAwEO3J-5x7-63kmQpUYkSXgkK-aOM",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"organizador 1\",\r\n    \"lastname\":\"apellido 1\",\r\n    \"rank\":\"coordinador\"\r\n}",
+							"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"Zacarias\",\r\n    \"lastname\":\"Candela\",\r\n    \"rank\":\"coordinator\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -459,15 +73,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "333"
+							"value": "325"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"14d-wC8nLu4uzBqmBK8BlMZzdBaSwog\""
+							"value": "W/\"145-Mga6+xUK4/gTvCgVVzf4b8E/XYo\""
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 06 Mar 2024 13:25:39 GMT"
+							"value": "Wed, 06 Mar 2024 15:55:15 GMT"
 						},
 						{
 							"key": "Connection",
@@ -479,22 +93,16 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"email\": \"organizer@gmail.com\",\n    \"password\": \"$2a$10$Qr3p0JwUZPPtVwpLWIfOfepYtQOoGholbhBg30IRu8l8.AgBlCVgu\",\n    \"_id\": \"65e86ed3f3a01691d537cbf9\",\n    \"__t\": \"Organizer\",\n    \"organization\": \"Icesi\",\n    \"name\": \"organizador 1\",\n    \"lastname\": \"apellido 1\",\n    \"rank\": \"coordinador\",\n    \"createdAt\": \"2024-03-06T13:25:39.007Z\",\n    \"updatedAt\": \"2024-03-06T13:25:39.007Z\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"email\": \"organizer@gmail.com\",\n    \"password\": \"$2a$10$53ERASF2ydNFEpOjp2LtM.RYFtxDZPwhMPwaj5yyFwQ0ImuJzu/sO\",\n    \"_id\": \"65e891e3e5a7b045b14daeb3\",\n    \"__t\": \"Organizer\",\n    \"organization\": \"Icesi\",\n    \"name\": \"Zacarias\",\n    \"lastname\": \"Candela\",\n    \"rank\": \"coordinator\",\n    \"createdAt\": \"2024-03-06T15:55:15.721Z\",\n    \"updatedAt\": \"2024-03-06T15:55:15.721Z\",\n    \"__v\": 0\n}"
 				},
 				{
-					"name": "access_only_admin",
+					"name": "user_exists",
 					"originalRequest": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODZlZDNmM2EwMTY5MWQ1MzdjYmY5IiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcwOTczNDU0MSwiZXhwIjoxNzA5NzM1MTQxfQ.Yc8Lx555wd3VyX7cG6YLlwCc0R-mpzUHNP1zcrsm6l4",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"organizer2@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Javeriana\",\r\n    \"name\":\"organizador2\",\r\n    \"lastname\":\"sera\",\r\n    \"rank\":\"ayudante\"\r\n}",
+							"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"organization\":\"Icesi\",\r\n    \"name\":\"Zacarias\",\r\n    \"lastname\":\"Candela\",\r\n    \"rank\":\"coordinator\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -513,8 +121,8 @@
 							]
 						}
 					},
-					"status": "Forbidden",
-					"code": 403,
+					"status": "Bad Request",
+					"code": 400,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -527,15 +135,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "52"
+							"value": "39"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"34-/viQjanL8k9Cd9pbpbTdoAx5Evs\""
+							"value": "W/\"27-wcwrsfhTfruJGzHfmt6WBJoEpIA\""
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 06 Mar 2024 14:17:19 GMT"
+							"value": "Wed, 06 Mar 2024 15:55:48 GMT"
 						},
 						{
 							"key": "Connection",
@@ -547,45 +155,16 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"message\": \"Access Denied: Only SuperAdmin allowed\"\n}"
-				}
-			]
-		},
-		{
-			"name": "login_organizer",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"body": "{\n    \"message\": \"Organizer already exists!\"\n}"
 				},
-				"url": {
-					"raw": "http://localhost:3000/login_organizer",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"login_organizer"
-					]
-				}
-			},
-			"response": [
 				{
-					"name": "login_succesfull",
+					"name": "validation_error",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"name\":\"Zacarias\",\r\n    \"lastname\":\"Candela\",\r\n    \"rank\":\"coordinator\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -593,19 +172,19 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/login_organizer",
+							"raw": "http://localhost:3000/create_organizer",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"login_organizer"
+								"create_organizer"
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "Bad Request",
+					"code": 400,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -618,15 +197,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "255"
+							"value": "240"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"ff-aFFYZSiCA2EsPw9in0AX6MKIjDw\""
+							"value": "W/\"f0-5MY66Tz9QarWVnWs+DruODO4g1Q\""
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 06 Mar 2024 14:07:39 GMT"
+							"value": "Wed, 06 Mar 2024 18:44:46 GMT"
 						},
 						{
 							"key": "Connection",
@@ -638,7 +217,222 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODZlZDNmM2EwMTY5MWQ1MzdjYmY5IiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcwOTczNDA1OSwiZXhwIjoxNzA5NzM0NjU5fQ.osMlUUQvMq-p6TYlXy1I_st6Vs8QHkxLocbOE6Ulwfc\"\n}"
+					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"invalid_type\\\",\\n    \\\"expected\\\": \\\"string\\\",\\n    \\\"received\\\": \\\"undefined\\\",\\n    \\\"path\\\": [\\n      \\\"organization\\\"\\n    ],\\n    \\\"message\\\": \\\"Organization is required\\\"\\n  }\\n]\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create_attendee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"attende@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"age\" : 12,\r\n    \"name\" : \"Ana Lisa\",\r\n    \"lastname\" : \"Melano\",\r\n    \"location\": \"Cali\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create_attendee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create_attendee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user_sucessfull",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"attende@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"age\" : 12,\r\n    \"name\" : \"Ana Lisa\",\r\n    \"lastname\" : \"Melano\",\r\n    \"location\": \"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_attendee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_attendee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "304"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"130-fNdU+l9Z2ClOv2Njf05ui4AUio0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 18:42:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"attende@gmail.com\",\n    \"password\": \"$2a$10$GPuqr/j4kjrce5Vhac581uHx4393xyh4X9hJQH4zWFCZiXQ7ohsHW\",\n    \"_id\": \"65e8b91e094eb92115e8ebee\",\n    \"__t\": \"Attendee\",\n    \"name\": \"Ana Lisa\",\n    \"lastname\": \"Melano\",\n    \"age\": 12,\n    \"location\": \"Cali\",\n    \"createdAt\": \"2024-03-06T18:42:38.284Z\",\n    \"updatedAt\": \"2024-03-06T18:42:38.284Z\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "user_exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"attende@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"age\" : 12,\r\n    \"name\" : \"Ana Lisa\",\r\n    \"lastname\" : \"Melano\",\r\n    \"location\": \"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_attendee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_attendee"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26-nNTta5DTW6WLsgmkylXIdYatYzs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 18:43:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Attendee already exists!\"\n}"
+				},
+				{
+					"name": "validation_error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"attende@gmail.com\",\r\n    \"password\":\"12345678\",\r\n    \"name\" : \"Ana Lisa\",\r\n    \"lastname\" : \"Melano\",\r\n    \"location\": \"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_attendee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_attendee"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "222"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"de-qhLkxWmHZ8irS4v6zjiKEhm5yts\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 06 Mar 2024 18:44:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"code\\\": \\\"invalid_type\\\",\\n    \\\"expected\\\": \\\"number\\\",\\n    \\\"received\\\": \\\"undefined\\\",\\n    \\\"path\\\": [\\n      \\\"age\\\"\\n    ],\\n    \\\"message\\\": \\\"Age is required\\\"\\n  }\\n]\"\n}"
 				}
 			]
 		}

@@ -1,7 +1,4 @@
 import jwt from "jsonwebtoken";
-import { super_admin } from "../models/superadmin.model";
-import { organizer } from "../models/organizer.model";
-import { attendee } from "../models/attendee.model";
 import { base_user_model, base_user } from "../models/base_user.model";
 class BaseUserService  {
    
