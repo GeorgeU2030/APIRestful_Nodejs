@@ -2,6 +2,7 @@ import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import { connect_db } from "./db/connection";
 import { superadmin_routes } from "./routes/superadmin.routes";
+import { organizer_routes } from "./routes/organizer.routes";
 
 dotenv.config();
 
@@ -22,3 +23,5 @@ app.listen(port, () => {
 });
 
 superadmin_routes(app);
+organizer_routes(app);
+
