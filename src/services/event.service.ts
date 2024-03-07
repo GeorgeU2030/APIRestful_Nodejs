@@ -1,7 +1,7 @@
 import { event_model, event } from "../models/events.model";
 
-export class EventService {
-    public async get_events(): Promise<event[]> {
+class EventService {
+    public async find_all_events(): Promise<event[]> {
         try{
             return await event_model.find();
         }catch(error){
@@ -9,7 +9,7 @@ export class EventService {
         }
     }
 
-    public async get_event(id: string): Promise<event | null> {
+    public async find_event_by_id(id: string): Promise<event | null> {
         try{
             return await event_model.findById(id);
         }catch(error){
@@ -42,3 +42,5 @@ export class EventService {
         }
     }
 }
+
+export const event_service = new EventService();
