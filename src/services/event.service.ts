@@ -43,4 +43,4 @@ class EventService {
     }
 }
 
-export const event_service = new EventService();
+export default new EventService();
