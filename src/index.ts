@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import { connect_db } from "./db/connection";
 import { organizer_routes } from "./routes/organizer.routes";
 import { attendee_routes } from "./routes/attendee.routes";
+import { event_routes } from "./routes/event.routes";
 
 dotenv.config();
 
@@ -24,3 +25,4 @@ app.listen(port, () => {
 
 organizer_routes(app);
 attendee_routes(app);
+event_routes(app);
