@@ -1844,7 +1844,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/register_for_event/65ede6348264c461328dc587",
+					"raw": "http://localhost:3000/register_for_event/65ede4428264c461328dc580",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1852,19 +1852,19 @@
 					"port": "3000",
 					"path": [
 						"register_for_event",
-						"65ede6348264c461328dc587"
+						"65ede4428264c461328dc580"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "registered_event",
+					"name": "error_registered",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTMzMTAsImV4cCI6MTcxMDA5NjkxMH0.UVD2acn8n1bqo_dmalY3ftiwm2EtiCD6JfiYBHo2Ryc",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA5NDk2NiwiZXhwIjoxNzEwMDk4NTY2fQ.LT6NVd6VhltUdTncueObUFnilp2dGN3dX1K30p7VnFA",
 								"type": "text"
 							}
 						],
@@ -1878,6 +1878,66 @@
 							"path": [
 								"register_for_event",
 								"65ede6348264c461328dc587"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-crnW0QTq558MbYclKowLmc7wubE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 18:32:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Error in the register: Error: Error to registered in the event: Error: You are already registered in this event\"\n}"
+				},
+				{
+					"name": "event_registered",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTMzMTAsImV4cCI6MTcxMDA5NjkxMH0.UVD2acn8n1bqo_dmalY3ftiwm2EtiCD6JfiYBHo2Ryc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/register_for_event/65ede4428264c461328dc580",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register_for_event",
+								"65ede4428264c461328dc580"
 							]
 						}
 					},
@@ -1895,15 +1955,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "34"
+							"value": "166"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"22-RTSAxEcFlsrfd35FGO2JMNjDqe4\""
+							"value": "W/\"a6-FWxxwijEmF7c2ZlxZQ2YQbi0W5Y\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 17:57:10 GMT"
+							"value": "Sun, 10 Mar 2024 18:35:54 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1915,7 +1975,239 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"message\": \"Inscripción exitosa\"\n}"
+					"body": "{\n    \"message\": \"Registration Succesfull\",\n    \"register\": {\n        \"event_id\": \"65ede4428264c461328dc580\",\n        \"user_id\": \"65edf39e313e08dc40eb5e27\",\n        \"_id\": \"65edfd8a993b245fd1c950f8\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get_registered_events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTY1ODQsImV4cCI6MTcxMDEwMDE4NH0.604ekHi23BAl8ia6yKUvNfBPhjCaSuZOIKkFh3Slo_Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/registered_events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registered_events"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "my_registered_events",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTY1ODQsImV4cCI6MTcxMDEwMDE4NH0.604ekHi23BAl8ia6yKUvNfBPhjCaSuZOIKkFh3Slo_Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/registered_events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registered_events"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "963"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3c3-WeE8A+i7vjk/pTFAK60ZC8hIQSA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 18:50:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"registeredEvents\": [\n        {\n            \"_id\": \"65edf476bf52691f6e1ca98e\",\n            \"event_id\": {\n                \"_id\": \"65ede6348264c461328dc587\",\n                \"title\": \"UEFA CHAMPIONS 2024\",\n                \"description\": \"new description\",\n                \"init_date\": \"2024-03-24T00:00:00.000Z\",\n                \"init_time\": \"10:00\",\n                \"end_date\": \"2024-04-24T00:00:00.000Z\",\n                \"end_time\": \"12:00\",\n                \"type\": \"Sports\",\n                \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n                \"location\": \"Munich\",\n                \"createdAt\": \"2024-03-10T16:56:20.678Z\",\n                \"updatedAt\": \"2024-03-10T16:59:17.884Z\",\n                \"__v\": 0\n            },\n            \"user_id\": \"65edf39e313e08dc40eb5e27\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65edfd8a993b245fd1c950f8\",\n            \"event_id\": {\n                \"_id\": \"65ede4428264c461328dc580\",\n                \"title\": \"Charla de Steve Jobs\",\n                \"description\": \"new description\",\n                \"init_date\": \"2025-03-24T00:00:00.000Z\",\n                \"init_time\": \"10:00\",\n                \"end_date\": \"2024-04-24T00:00:00.000Z\",\n                \"end_time\": \"12:00\",\n                \"type\": \"Networking\",\n                \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n                \"location\": \"Canada\",\n                \"createdAt\": \"2024-03-10T16:48:02.513Z\",\n                \"updatedAt\": \"2024-03-10T16:48:02.513Z\",\n                \"__v\": 0\n            },\n            \"user_id\": \"65edf39e313e08dc40eb5e27\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get_attendees",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA5NzQ1OSwiZXhwIjoxNzEwMTAxMDU5fQ.yXiCrTWkmIXOROUZUZfChpzSINyT7bPzXJa4rLNB7Po",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/attendees/65ede47a8264c461328dc582",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"attendees",
+						"65ede47a8264c461328dc582"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "error_access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTY1ODQsImV4cCI6MTcxMDEwMDE4NH0.604ekHi23BAl8ia6yKUvNfBPhjCaSuZOIKkFh3Slo_Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/attendees/65ede47a8264c461328dc582",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"attendees",
+								"65ede47a8264c461328dc582"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8b-lAOr4MW7fcWpJqEDu5SXI2lI6ss\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 19:03:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Error to get attendees: Error: Error to get attendees: Error: You do not have access to this event or the event do not exists\"\n}"
+				},
+				{
+					"name": "get_attendees_event",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA5NzQ1OSwiZXhwIjoxNzEwMTAxMDU5fQ.yXiCrTWkmIXOROUZUZfChpzSINyT7bPzXJa4rLNB7Po",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/attendees/65ede47a8264c461328dc582",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"attendees",
+								"65ede47a8264c461328dc582"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "481"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e1-bPGdgNd+yZGOi6Qqe4l/MV83MI8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 19:04:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attendees\": [\n        {\n            \"_id\": \"65edfd5c993b245fd1c950f3\",\n            \"event_id\": \"65ede47a8264c461328dc582\",\n            \"user_id\": {\n                \"_id\": \"65ede2b29a0b35e9462e259f\",\n                \"email\": \"organizer2@gmail.com\",\n                \"password\": \"$2a$10$85ZcxclrJtNqgPHjiIMlWuw/bMkGoMxfa0Gri51P1Xn7U..IY1U/2\",\n                \"__t\": \"Organizer\",\n                \"organization\": \"Icesi\",\n                \"name\": \"Zacarias\",\n                \"lastname\": \"Candela\",\n                \"rank\": \"coordinator\",\n                \"createdAt\": \"2024-03-10T16:41:22.975Z\",\n                \"updatedAt\": \"2024-03-10T18:35:08.610Z\",\n                \"__v\": 1,\n                \"registeredEvents\": [\n                    \"65edfd5c993b245fd1c950f3\"\n                ]\n            },\n            \"__v\": 0\n        }\n    ]\n}"
 				}
 			]
 		}

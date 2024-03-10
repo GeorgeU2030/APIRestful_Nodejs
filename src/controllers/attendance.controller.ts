@@ -1,36 +1,42 @@
 import { Request,Response } from "express";
-import { attendance_model } from "../models/attendance.model";
-import { base_user_model } from "../models/base_user.model";
-
+import AttendanceService from "../services/attendance.service";
 class AttendanceController{
 
-    public registerForEvent = async (req: Request, res: Response) => {
-    const event_id = req.params.id;
-    const user_id = req.body.loggedUser.user_id;
+    public register_for_event = async (req: Request, res: Response) => {
+        const event_id = req.params.id;
+        const user_id = req.body.loggedUser.user_id;
         try {
             // verify if the user is registered in the event
-            const existingAttendance = await attendance_model.findOne({ event_id, user_id });
-
-            if (existingAttendance) {
-                return res.status(400).json({ message: 'You are registered in this event' });
-            }
-
-            // create the attendance
-            const newAttendance = new attendance_model({ event_id, user_id });
-            await newAttendance.save();
-
-            // update the registered events of the user
-            const user = await base_user_model.findById(user_id);
-            if (user) {
-                user.registeredEvents.push(newAttendance._id);
-                await user.save();
-            }
-
-            return res.status(200).json({ message: 'Inscripción exitosa' });
+            const register = await AttendanceService.registerForEvent(event_id, user_id);
+            return res.status(200).json({ message: 'Registration Succesfull', register});
         } catch (error) {
-            return res.status(500).json({ message: `Error al inscribirse al evento: ${error}` });
+            return res.status(500).json({ message: `Error in the register: ${error}` });
         }
     }
+
+    public get_registered_events = async (req: Request, res: Response) => {
+        try {
+            const user_id = req.body.loggedUser.user_id;
+            const registeredEvents = await AttendanceService.get_registered_events(user_id);
+            return res.status(200).json({ registeredEvents });
+        } catch (error) {
+            return res.status(500).json({ message: `Error al obtener eventos inscritos: ${error}` });
+        }
+    };
+
+    public get_attendance = async (req: Request, res: Response) => {
+        try{
+            const event_id = req.params.id;
+            const user_id = req.body.loggedUser.user_id;
+
+            const attendees = await AttendanceService.get_attendees(event_id, user_id);
+            return res.status(200).json({attendees});
+        }catch(error){
+            return res.status(500).json({message: `Error to get attendees: ${error}`});
+        }
+    }
+    
+    
 }
 
 export default new AttendanceController();
