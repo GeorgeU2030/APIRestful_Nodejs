@@ -443,7 +443,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"raw": "{\r\n    \"email\":\"organizer@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -596,7 +596,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"attende@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"raw": "{\r\n    \"email\":\"attende@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -739,6 +739,307 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcwOTkwODgyMiwiZXhwIjoxNzA5OTA5NDIyfQ.OZgtVXzBLXxC87WayDmj-SQv5X5MtphZhV9ljoEI9qM\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create_event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4MzA0MSwiZXhwIjoxNzEwMDgzNjQxfQ.XM5N_gwPCF6DqB7zbtNcrRIkgyNLX5fHHw8CQBFwFVM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Evento Prueba\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"location\":\"Cali\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create_event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create_event"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "forbidden_access",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4MjM4OSwiZXhwIjoxNzEwMDgyOTg5fQ.Kp8K76EHZ0jLGoPn5oVm7dRkACmwTujett4pwwyLM8g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Evento 3\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"location\":\"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_event"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-jF8YAbqevWJCzE+L61bECHDk710\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 14:53:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Forbidden access\"\n}"
+				},
+				{
+					"name": "access_denied",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Evento 3\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"location\":\"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_event"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-jCX6s13nU50BXGFcEYfOShVHTH8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 14:56:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Access Denied\"\n}"
+				},
+				{
+					"name": "validation_error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4MzA0MSwiZXhwIjoxNzEwMDgzNjQxfQ.XM5N_gwPCF6DqB7zbtNcrRIkgyNLX5fHHw8CQBFwFVM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Evento Prueba\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"any type\",\r\n    \"location\":\"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_event"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "460"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1cc-FT+JsLwh3RouCN/eGcl1ldYoZrI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 15:04:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Validation error: [\\n  {\\n    \\\"received\\\": \\\"any type\\\",\\n    \\\"code\\\": \\\"invalid_enum_value\\\",\\n    \\\"options\\\": [\\n      \\\"Conference\\\",\\n      \\\"Concert\\\",\\n      \\\"Sports\\\",\\n      \\\"Exhibition\\\",\\n      \\\"Networking\\\",\\n      \\\"Party\\\"\\n    ],\\n    \\\"path\\\": [\\n      \\\"type\\\"\\n    ],\\n    \\\"message\\\": \\\"Invalid enum value. Expected 'Conference' | 'Concert' | 'Sports' | 'Exhibition' | 'Networking' | 'Party', received 'any type'\\\"\\n  }\\n]\"\n}"
+				},
+				{
+					"name": "event_created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4MzA0MSwiZXhwIjoxNzEwMDgzNjQxfQ.XM5N_gwPCF6DqB7zbtNcrRIkgyNLX5fHHw8CQBFwFVM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Evento Prueba\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"location\":\"Cali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/create_event",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create_event"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "326"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"146-omCOafN4txaLLKzgYBNzqqEB0B4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 15:04:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"Evento Prueba\",\n    \"description\": \"new description\",\n    \"init_date\": \"2024-03-24T00:00:00.000Z\",\n    \"init_time\": \"10:00\",\n    \"end_date\": \"2024-04-24T00:00:00.000Z\",\n    \"end_time\": \"12:00\",\n    \"type\": \"Sports\",\n    \"location\": \"Cali\",\n    \"_id\": \"65edcc1464464484eac5c9f5\",\n    \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n    \"updatedAt\": \"2024-03-10T15:04:52.732Z\",\n    \"__v\": 0\n}"
 				}
 			]
 		}
