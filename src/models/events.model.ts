@@ -9,6 +9,7 @@ export interface event extends Document {
 	end_time: string;
 	location: string;
 	type: string;
+	organizer_id: string;
 	createdAt: Date;
 	updatedAt: Date;
 }
@@ -22,9 +23,11 @@ const event_schema = new Schema<event>({
 	end_date: { type: Date, required: true },
 	end_time: { type: String, required: true },
 	type: { type: String, required: true },
+	organizer_id: { type: String, required: true },
 	location: { type: String, required: true },
 },
 	{ timestamps: true }
 );
+
 
 export const event_model: Model<event> = mongoose.model("Event", event_schema);

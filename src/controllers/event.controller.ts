@@ -1,7 +1,10 @@
 import { Request, Response } from "express";
 import EventService from "../services/event.service";
+import { event } from "../models/events.model";
 
-
+const isMyEvent = (userId: string, event: event): boolean => {
+	return event.id === userId; 
+};
 class EventController {
 
 	// get all events or filter by (init_date, type or location) if a query parameter dont match with any of these,
@@ -59,7 +62,9 @@ class EventController {
 		try {
 			const id = req.params.id;
 			const event = req.body;
-			const updated_event = await EventService.update_event(id, event);
+			const user_id = req.body.loggedUser.user_id;
+
+			const updated_event = await EventService.update_event(id, event,user_id);
 			if (updated_event) {
 				res.status(200).json(updated_event);
 			} else {
@@ -73,7 +78,8 @@ class EventController {
 	public delete_event = async (req: Request, res: Response) => {
 		try {
 			const id = req.params.id;
-			const deleted_event = await EventService.delete_event(id);
+			const user_id = req.body.loggedUser.user_id;
+			const deleted_event = await EventService.delete_event(id,user_id);
 			if (deleted_event) {
 				res.status(200).json(deleted_event);
 			} else {

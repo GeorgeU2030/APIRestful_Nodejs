@@ -24,7 +24,6 @@ export const auth = async (req: Request, res: Response, next: NextFunction) => {
 export const authorize = (requiredRole: string) => {
     return (req: Request, res: Response, next: NextFunction) => {
         const role = req.body.loggedUser.role;
-        console.log(role)
         if (role !== requiredRole) {
             return res.status(403).json({message: 'Forbidden access'});
         }

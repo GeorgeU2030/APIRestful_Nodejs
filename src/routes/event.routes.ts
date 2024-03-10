@@ -9,6 +9,6 @@ export const event_routes = (app: Express) => {
     app.get("/events", EventController.find_events);
     app.get("/event/:id", EventController.find_event_by_id);
     app.post("/create_event",authorize('Organizer'), schema_validation(event_schema), EventController.create_event);
-    app.put("/update_event/:id", schema_validation(event_schema), EventController.update_event);
-    app.delete("/delete_event/:id", EventController.delete_event);
+    app.put("/update_event/:id",authorize('Organizer'), schema_validation(event_schema), EventController.update_event);
+    app.delete("/delete_event/:id",authorize('Organizer'), EventController.delete_event);
 }

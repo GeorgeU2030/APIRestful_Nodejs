@@ -22,7 +22,11 @@ export const event_schema = object({
     type: z.enum(["Conference", "Concert","Sports","Exhibition","Networking","Party"], {
         required_error: "Type is required",
     }),
+    organizer_id: string({
+        required_error: "Organizer is required",
+    }),
     location: string({
         required_error: "Location is required",
     }),
 });
+
