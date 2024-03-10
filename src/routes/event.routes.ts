@@ -6,7 +6,7 @@ import { auth, authorize } from '../middlewares/authentication';
 
 export const event_routes = (app: Express) => {
     app.use(auth);
-    app.get("/events", EventController.find_all_events);
+    app.get("/events", EventController.find_events);
     app.get("/event/:id", EventController.find_event_by_id);
     app.post("/create_event",authorize('Organizer'), schema_validation(event_schema), EventController.create_event);
     app.put("/update_event/:id", schema_validation(event_schema), EventController.update_event);

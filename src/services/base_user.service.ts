@@ -13,7 +13,7 @@ class BaseUserService  {
 
     public generateToken (user: base_user):string {
         try{
-            return jwt.sign({user_id:user.id,email:user.email,role:user.__t}, process.env.TOKEN_SECRET as string, {expiresIn: '10m'});
+            return jwt.sign({user_id:user.id,email:user.email,role:user.__t}, process.env.TOKEN_SECRET as string, {expiresIn: '60m'});
         }catch(error){
             throw new Error((error as Error).message);
         }

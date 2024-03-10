@@ -1,10 +1,29 @@
 import { Request, Response } from "express";
 import EventService from "../services/event.service";
 
+
 class EventController {
-	public find_all_events = async (req: Request, res: Response) => {
+
+	// get all events or filter by (init_date, type or location) if a query parameter dont match with any of these,
+	// return a 400 status code, 
+	// if the query parameter is empty, return all events 
+	public find_events = async (req: Request, res: Response) => {
 		try {
-			const events = await EventService.find_all_events();
+			let events;
+			if (req.query.init_date) {
+				const init_date = new Date(req.query.init_date as string);
+				events = await EventService.find_events_by_init_date(init_date);
+			} else if (req.query.type) {
+				const type = req.query.type as string;
+				events = await EventService.find_events_by_type(type);
+			} else if (req.query.location) {
+				const location = req.query.location as string;
+				events = await EventService.find_events_by_location(location);
+			} else if (Object.keys(req.query).length > 0) {
+				return res.status(400).json({ message: 'Invalid query parameter!' });
+			} else {
+				events = await EventService.find_all_events();
+			}
 			res.status(200).json(events);
 		} catch (error) {
 			res.status(400).json({ message: 'An error ocurred! :(' + error });
@@ -25,6 +44,7 @@ class EventController {
 		}
 	}
 
+	// create an event - only the organizer can create an event
 	public create_event = async (req: Request, res: Response) => {
 		try {
 			const event = req.body;

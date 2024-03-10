@@ -41,6 +41,32 @@ class EventService {
             throw new Error(`A problem ocurred :( ${error}`);
         }
     }
+
+    // filters of events
+
+    public async find_events_by_type(type: string): Promise<event[]> {
+        try{
+            return await event_model.find({type});
+        }catch(error){
+            throw new Error(`A problem ocurred :( ${error}`);
+        }
+    }
+
+    public async find_events_by_location(location: string): Promise<event[]> {
+        try{
+            return await event_model.find({location});
+        }catch(error){
+            throw new Error(`A problem ocurred :( ${error}`);
+        }
+    }
+
+    public async find_events_by_init_date(date: Date): Promise<event[]> {
+        try{
+            return await event_model.find({init_date: date});
+        }catch(error){
+            throw new Error(`A problem ocurred :( ${error}`);
+        }
+    }
 }
 
 export default new EventService();
