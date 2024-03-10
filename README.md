@@ -4,6 +4,8 @@
 
 ### Taller Node js
 
+The deployments that are on the right were not successful, we tried using precommits but it didn't work, it was the difficulty presented in the project, it was solved using the basic form of vercel through the CLI, to see the functional deployment press the button
+
 [![Deployed with Vercel](https://vercel.com/button)](https://tallernodejs.vercel.app/)
 
 ## Introduction
