@@ -28,3 +28,5 @@ organizer_routes(app);
 attendee_routes(app);
 event_routes(app);
 attendance_routes(app);
+
+export default app;
