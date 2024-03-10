@@ -1,4 +1,4 @@
-import { object, string } from "zod";
+import { object, string, z } from "zod";
 
 export const event_schema = object({
     title: string({
@@ -18,6 +18,9 @@ export const event_schema = object({
     }),
     end_time: string({
         required_error: "End time is required",
+    }),
+    type: z.enum(["Conference", "Concert","Sports","Exhibition","Networking","Party"], {
+        required_error: "Type is required",
     }),
     location: string({
         required_error: "Location is required",
