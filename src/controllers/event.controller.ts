@@ -1,10 +1,6 @@
 import { Request, Response } from "express";
 import EventService from "../services/event.service";
-import { event } from "../models/events.model";
 
-const isMyEvent = (userId: string, event: event): boolean => {
-	return event.id === userId; 
-};
 class EventController {
 
 	// get all events or filter by (init_date, type or location) if a query parameter dont match with any of these,
@@ -89,6 +85,8 @@ class EventController {
 			res.status(400).json({ message: 'An error ocurred! :(' + error });
 		}
 	}
+
+
 }
 
 export default new EventController();
