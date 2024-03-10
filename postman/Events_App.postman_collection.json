@@ -749,13 +749,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4MzA0MSwiZXhwIjoxNzEwMDgzNjQxfQ.XM5N_gwPCF6DqB7zbtNcrRIkgyNLX5fHHw8CQBFwFVM",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"Evento Prueba\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"location\":\"Cali\"\r\n}",
+					"raw": "{\r\n    \"title\":\"Concierto de Travis Scott\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2026-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Concert\",\r\n    \"organizer_id\":\"65e891e3e5a7b045b14daeb3\",\r\n    \"location\":\"USA\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -980,13 +980,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4MzA0MSwiZXhwIjoxNzEwMDgzNjQxfQ.XM5N_gwPCF6DqB7zbtNcrRIkgyNLX5fHHw8CQBFwFVM",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\":\"Evento Prueba\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"location\":\"Cali\"\r\n}",
+							"raw": "{\r\n    \"title\":\"Evento Prueba\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"organizer_id\":\"65e891e3e5a7b045b14daeb3\",\r\n    \"location\":\"Cali\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1019,15 +1019,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "326"
+							"value": "368"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"146-omCOafN4txaLLKzgYBNzqqEB0B4\""
+							"value": "W/\"170-tSr0A+MCYb1r50z9RbpFAgu9D40\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 15:04:52 GMT"
+							"value": "Sun, 10 Mar 2024 16:43:51 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1039,7 +1039,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"title\": \"Evento Prueba\",\n    \"description\": \"new description\",\n    \"init_date\": \"2024-03-24T00:00:00.000Z\",\n    \"init_time\": \"10:00\",\n    \"end_date\": \"2024-04-24T00:00:00.000Z\",\n    \"end_time\": \"12:00\",\n    \"type\": \"Sports\",\n    \"location\": \"Cali\",\n    \"_id\": \"65edcc1464464484eac5c9f5\",\n    \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n    \"updatedAt\": \"2024-03-10T15:04:52.732Z\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"title\": \"Evento Prueba\",\n    \"description\": \"new description\",\n    \"init_date\": \"2024-03-24T00:00:00.000Z\",\n    \"init_time\": \"10:00\",\n    \"end_date\": \"2024-04-24T00:00:00.000Z\",\n    \"end_time\": \"12:00\",\n    \"type\": \"Sports\",\n    \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n    \"location\": \"Cali\",\n    \"_id\": \"65ede3478264c461328dc57c\",\n    \"createdAt\": \"2024-03-10T16:43:51.613Z\",\n    \"updatedAt\": \"2024-03-10T16:43:51.613Z\",\n    \"__v\": 0\n}"
 				}
 			]
 		},
@@ -1074,7 +1074,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4NTAyNywiZXhwIjoxNzEwMDg1NjI3fQ.fwAgQZEDMNPVi0xTaNA-2NBu1qBcInaPLhQeYax05sU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 								"type": "text"
 							}
 						],
@@ -1104,15 +1104,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "1338"
+							"value": "1144"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"53a-6c7N8MyNxiGXmbx0xx0FgMYrBaA\""
+							"value": "W/\"478-II0Rja3aUWjarvHGA+fBbNXEL8Q\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 15:46:30 GMT"
+							"value": "Sun, 10 Mar 2024 16:50:06 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1124,7 +1124,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"65edcc1464464484eac5c9f5\",\n        \"title\": \"Evento Prueba\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Sports\",\n        \"location\": \"Cali\",\n        \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n        \"updatedAt\": \"2024-03-10T15:04:52.732Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65edd56bea4db12f0b4e7afa\",\n        \"title\": \"Concierto Travis Scott\",\n        \"description\": \"new description\",\n        \"init_date\": \"2025-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Concert\",\n        \"location\": \"USA\",\n        \"createdAt\": \"2024-03-10T15:44:43.745Z\",\n        \"updatedAt\": \"2024-03-10T15:44:43.745Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65edd5a4ea4db12f0b4e7afc\",\n        \"title\": \"Charla de Steve Jobs\",\n        \"description\": \"new description\",\n        \"init_date\": \"2026-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Networking\",\n        \"location\": \"Canada\",\n        \"createdAt\": \"2024-03-10T15:45:40.325Z\",\n        \"updatedAt\": \"2024-03-10T15:45:40.325Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65edd5ceea4db12f0b4e7afe\",\n        \"title\": \"Party Proyecto X\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Party\",\n        \"location\": \"Las Vegas\",\n        \"createdAt\": \"2024-03-10T15:46:22.755Z\",\n        \"updatedAt\": \"2024-03-10T15:46:22.755Z\",\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"65edcc1464464484eac5c9f5\",\n        \"title\": \"Actualicemos el evento\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Sports\",\n        \"location\": \"Bogota\",\n        \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n        \"updatedAt\": \"2024-03-10T16:46:34.540Z\",\n        \"__v\": 0,\n        \"organizer_id\": \"65e891e3e5a7b045b14daeb3\"\n    },\n    {\n        \"_id\": \"65ede4428264c461328dc580\",\n        \"title\": \"Charla de Steve Jobs\",\n        \"description\": \"new description\",\n        \"init_date\": \"2025-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Networking\",\n        \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n        \"location\": \"Canada\",\n        \"createdAt\": \"2024-03-10T16:48:02.513Z\",\n        \"updatedAt\": \"2024-03-10T16:48:02.513Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65ede47a8264c461328dc582\",\n        \"title\": \"Concierto de Travis Scott\",\n        \"description\": \"new description\",\n        \"init_date\": \"2026-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Concert\",\n        \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n        \"location\": \"USA\",\n        \"createdAt\": \"2024-03-10T16:48:58.963Z\",\n        \"updatedAt\": \"2024-03-10T16:48:58.963Z\",\n        \"__v\": 0\n    }\n]"
 				},
 				{
 					"name": "filter_by_type",
@@ -1133,12 +1133,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4NTYzOCwiZXhwIjoxNzEwMDg2MjM4fQ.O9aNv8UVw0DHVMtKhouDed2FiX4fAWfxHS8tUoILBm0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/events?type=Sports",
+							"raw": "http://localhost:3000/events?type=Concert",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1150,7 +1150,7 @@
 							"query": [
 								{
 									"key": "type",
-									"value": "Sports"
+									"value": "Concert"
 								}
 							]
 						}
@@ -1169,15 +1169,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "328"
+							"value": "382"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"148-SlxyN2chmCnPGZHV+RzStqQuKnA\""
+							"value": "W/\"17e-mrzZ8/fzU+hEwc2j+WITG+QIDRw\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 15:48:07 GMT"
+							"value": "Sun, 10 Mar 2024 16:52:11 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1189,7 +1189,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"65edcc1464464484eac5c9f5\",\n        \"title\": \"Evento Prueba\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Sports\",\n        \"location\": \"Cali\",\n        \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n        \"updatedAt\": \"2024-03-10T15:04:52.732Z\",\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"65ede47a8264c461328dc582\",\n        \"title\": \"Concierto de Travis Scott\",\n        \"description\": \"new description\",\n        \"init_date\": \"2026-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Concert\",\n        \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n        \"location\": \"USA\",\n        \"createdAt\": \"2024-03-10T16:48:58.963Z\",\n        \"updatedAt\": \"2024-03-10T16:48:58.963Z\",\n        \"__v\": 0\n    }\n]"
 				},
 				{
 					"name": "filter_by_location",
@@ -1198,12 +1198,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4NTYzOCwiZXhwIjoxNzEwMDg2MjM4fQ.O9aNv8UVw0DHVMtKhouDed2FiX4fAWfxHS8tUoILBm0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/events?location=Las Vegas",
+							"raw": "http://localhost:3000/events?location=Canada",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1215,7 +1215,7 @@
 							"query": [
 								{
 									"key": "location",
-									"value": "Las Vegas"
+									"value": "Canada"
 								}
 							]
 						}
@@ -1234,15 +1234,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "335"
+							"value": "383"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"14f-jNdxgw+CplinHUxDbdoCNP7/QvE\""
+							"value": "W/\"17f-/cpAK9H5y/TUUolILSuG6UgO9UU\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 15:49:15 GMT"
+							"value": "Sun, 10 Mar 2024 16:53:01 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1254,7 +1254,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"65edd5ceea4db12f0b4e7afe\",\n        \"title\": \"Party Proyecto X\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Party\",\n        \"location\": \"Las Vegas\",\n        \"createdAt\": \"2024-03-10T15:46:22.755Z\",\n        \"updatedAt\": \"2024-03-10T15:46:22.755Z\",\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"65ede4428264c461328dc580\",\n        \"title\": \"Charla de Steve Jobs\",\n        \"description\": \"new description\",\n        \"init_date\": \"2025-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Networking\",\n        \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n        \"location\": \"Canada\",\n        \"createdAt\": \"2024-03-10T16:48:02.513Z\",\n        \"updatedAt\": \"2024-03-10T16:48:02.513Z\",\n        \"__v\": 0\n    }\n]"
 				},
 				{
 					"name": "filter_by_date",
@@ -1263,7 +1263,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4NTYzOCwiZXhwIjoxNzEwMDg2MjM4fQ.O9aNv8UVw0DHVMtKhouDed2FiX4fAWfxHS8tUoILBm0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 								"type": "text"
 							}
 						],
@@ -1299,15 +1299,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "662"
+							"value": "383"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"296-1tLg9HJXg9dw9BQbPt3beIkGkBs\""
+							"value": "W/\"17f-/cpAK9H5y/TUUolILSuG6UgO9UU\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 15:50:23 GMT"
+							"value": "Sun, 10 Mar 2024 16:53:01 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1319,7 +1319,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"65edcc1464464484eac5c9f5\",\n        \"title\": \"Evento Prueba\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Sports\",\n        \"location\": \"Cali\",\n        \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n        \"updatedAt\": \"2024-03-10T15:04:52.732Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"65edd5ceea4db12f0b4e7afe\",\n        \"title\": \"Party Proyecto X\",\n        \"description\": \"new description\",\n        \"init_date\": \"2024-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Party\",\n        \"location\": \"Las Vegas\",\n        \"createdAt\": \"2024-03-10T15:46:22.755Z\",\n        \"updatedAt\": \"2024-03-10T15:46:22.755Z\",\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"65ede4428264c461328dc580\",\n        \"title\": \"Charla de Steve Jobs\",\n        \"description\": \"new description\",\n        \"init_date\": \"2025-03-24T00:00:00.000Z\",\n        \"init_time\": \"10:00\",\n        \"end_date\": \"2024-04-24T00:00:00.000Z\",\n        \"end_time\": \"12:00\",\n        \"type\": \"Networking\",\n        \"organizer_id\": \"65e891e3e5a7b045b14daeb3\",\n        \"location\": \"Canada\",\n        \"createdAt\": \"2024-03-10T16:48:02.513Z\",\n        \"updatedAt\": \"2024-03-10T16:48:02.513Z\",\n        \"__v\": 0\n    }\n]"
 				},
 				{
 					"name": "invalid_query",
@@ -1328,7 +1328,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4NTYzOCwiZXhwIjoxNzEwMDg2MjM4fQ.O9aNv8UVw0DHVMtKhouDed2FiX4fAWfxHS8tUoILBm0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4OTAxMCwiZXhwIjoxNzEwMDkyNjEwfQ.CeFtueFkO8NVTHxw6psIvh1267MUD0xCK2MOXRzp-I8",
 								"type": "text"
 							}
 						],
@@ -1372,7 +1372,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 10 Mar 2024 15:51:02 GMT"
+							"value": "Sun, 10 Mar 2024 16:53:52 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1385,6 +1385,537 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"Invalid query parameter!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update_event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGUyYjI5YTBiMzVlOTQ2MmUyNTlmIiwiZW1haWwiOiJvcmdhbml6ZXIyQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTAwNDAsImV4cCI6MTcxMDA5MzY0MH0.DrdPLI45aCjXeb8fqGwgI--TGsLdgRhOLX6Na5K_KqI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"UEFA CHAMPIONS 2024\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"organizer_id\":\"65e891e3e5a7b045b14daeb3\",\r\n    \"location\":\"Londres\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update_event/65ede6348264c461328dc587",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update_event",
+						"65ede6348264c461328dc587"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "forbidden_access",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlOGI5MWUwOTRlYjkyMTE1ZThlYmVlIiwiZW1haWwiOiJhdHRlbmRlQGdtYWlsLmNvbSIsInJvbGUiOiJBdHRlbmRlZSIsImlhdCI6MTcxMDA4Nzg3NCwiZXhwIjoxNzEwMDkxNDc0fQ.2CqXdTaxX4zh-S_ALBX8ztT9TSUauT3mHeLghtVLCFQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Cambiando el evento\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/update_event/65edcc1464464484eac5c9f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"update_event",
+								"65edcc1464464484eac5c9f5"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-jF8YAbqevWJCzE+L61bECHDk710\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 16:26:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Forbidden access\"\n}"
+				},
+				{
+					"name": "update_event",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA4ODAxNywiZXhwIjoxNzEwMDkxNjE3fQ.Chnms-P_J6VUz3gWS9_ChEFK7Uia0gfjXBbK5evot2M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Actualicemos el evento\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"organizer_id\":\"65e891e3e5a7b045b14daeb3\",\r\n    \"location\":\"Bogota\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/update_event/65edcc1464464484eac5c9f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"update_event",
+								"65edcc1464464484eac5c9f5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "379"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17b-EtdMPYxzpZOZ40/Jw+MrYJDRogk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 16:46:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65edcc1464464484eac5c9f5\",\n    \"title\": \"Actualicemos el evento\",\n    \"description\": \"new description\",\n    \"init_date\": \"2024-03-24T00:00:00.000Z\",\n    \"init_time\": \"10:00\",\n    \"end_date\": \"2024-04-24T00:00:00.000Z\",\n    \"end_time\": \"12:00\",\n    \"type\": \"Sports\",\n    \"location\": \"Bogota\",\n    \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n    \"updatedAt\": \"2024-03-10T16:46:34.540Z\",\n    \"__v\": 0,\n    \"organizer_id\": \"65e891e3e5a7b045b14daeb3\"\n}"
+				},
+				{
+					"name": "error_organizer",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGUyYjI5YTBiMzVlOTQ2MmUyNTlmIiwiZW1haWwiOiJvcmdhbml6ZXIyQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTAwNDAsImV4cCI6MTcxMDA5MzY0MH0.DrdPLI45aCjXeb8fqGwgI--TGsLdgRhOLX6Na5K_KqI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"UEFA CHAMPIONS 2024\",\r\n    \"description\":\"new description\",\r\n    \"init_date\": \"2024-03-24\",\r\n    \"init_time\": \"10:00\",\r\n    \"end_date\": \"2024-04-24\",\r\n    \"end_time\": \"12:00\",\r\n    \"type\":\"Sports\",\r\n    \"organizer_id\":\"65e891e3e5a7b045b14daeb3\",\r\n    \"location\":\"Londres\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/update_event/65ede6348264c461328dc587",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"update_event",
+								"65ede6348264c461328dc587"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "109"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d-rk1EWdgVH23mAlu/eGSY4QzvJI8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 17:01:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"An error ocurred! :(Error: A problem ocurred :( Error: You are not the organizer of this event!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete_event",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGUyYjI5YTBiMzVlOTQ2MmUyNTlmIiwiZW1haWwiOiJvcmdhbml6ZXIyQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTAwNDAsImV4cCI6MTcxMDA5MzY0MH0.DrdPLI45aCjXeb8fqGwgI--TGsLdgRhOLX6Na5K_KqI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/delete_event/65edcc1464464484eac5c9f5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete_event",
+						"65edcc1464464484eac5c9f5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "error_organizer",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGUyYjI5YTBiMzVlOTQ2MmUyNTlmIiwiZW1haWwiOiJvcmdhbml6ZXIyQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTAwNDAsImV4cCI6MTcxMDA5MzY0MH0.DrdPLI45aCjXeb8fqGwgI--TGsLdgRhOLX6Na5K_KqI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/delete_event/65edcc1464464484eac5c9f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delete_event",
+								"65edcc1464464484eac5c9f5"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "109"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6d-rk1EWdgVH23mAlu/eGSY4QzvJI8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 17:03:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"An error ocurred! :(Error: A problem ocurred :( Error: You are not the organizer of this event!\"\n}"
+				},
+				{
+					"name": "access_denied",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/delete_event/65edcc1464464484eac5c9f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delete_event",
+								"65edcc1464464484eac5c9f5"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-jCX6s13nU50BXGFcEYfOShVHTH8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 17:04:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Access Denied\"\n}"
+				},
+				{
+					"name": "delete_event",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlODkxZTNlNWE3YjA0NWIxNGRhZWIzIiwiZW1haWwiOiJvcmdhbml6ZXJAZ21haWwuY29tIiwicm9sZSI6Ik9yZ2FuaXplciIsImlhdCI6MTcxMDA5MDI5OCwiZXhwIjoxNzEwMDkzODk4fQ.Dm12xxf3Y9wHcgx5A-IGiEA4tkM6x0HK-aAvpY9AHOU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/delete_event/65edcc1464464484eac5c9f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delete_event",
+								"65edcc1464464484eac5c9f5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "379"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17b-EtdMPYxzpZOZ40/Jw+MrYJDRogk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 17:05:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"65edcc1464464484eac5c9f5\",\n    \"title\": \"Actualicemos el evento\",\n    \"description\": \"new description\",\n    \"init_date\": \"2024-03-24T00:00:00.000Z\",\n    \"init_time\": \"10:00\",\n    \"end_date\": \"2024-04-24T00:00:00.000Z\",\n    \"end_time\": \"12:00\",\n    \"type\": \"Sports\",\n    \"location\": \"Bogota\",\n    \"createdAt\": \"2024-03-10T15:04:52.732Z\",\n    \"updatedAt\": \"2024-03-10T16:46:34.540Z\",\n    \"__v\": 0,\n    \"organizer_id\": \"65e891e3e5a7b045b14daeb3\"\n}"
+				}
+			]
+		},
+		{
+			"name": "registered_event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTMzMTAsImV4cCI6MTcxMDA5NjkxMH0.UVD2acn8n1bqo_dmalY3ftiwm2EtiCD6JfiYBHo2Ryc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/register_for_event/65ede6348264c461328dc587",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register_for_event",
+						"65ede6348264c461328dc587"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registered_event",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjVlZGYzOWUzMTNlMDhkYzQwZWI1ZTI3IiwiZW1haWwiOiJvcmdhbml6ZXIzQGdtYWlsLmNvbSIsInJvbGUiOiJPcmdhbml6ZXIiLCJpYXQiOjE3MTAwOTMzMTAsImV4cCI6MTcxMDA5NjkxMH0.UVD2acn8n1bqo_dmalY3ftiwm2EtiCD6JfiYBHo2Ryc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/register_for_event/65ede6348264c461328dc587",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register_for_event",
+								"65ede6348264c461328dc587"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22-RTSAxEcFlsrfd35FGO2JMNjDqe4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 10 Mar 2024 17:57:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Inscripción exitosa\"\n}"
 				}
 			]
 		}
